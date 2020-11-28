@@ -6,13 +6,19 @@
         "php": ">=5.5.0",
         "league/flysystem": "~1.0",
         "guzzlehttp/guzzle": "~6.0 || ^7.0",
-        "haxibiao/cos-sdk-v5": "^2.0",
+        "haxibiao/cos-php-sdk-v5": "^2.0",
         "nesbot/carbon": "~1.0 || ^2.0",
         "ext-json": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.8"
-    },
+    },    
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/haxibiao/cos-php-sdk-v5.git"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Freyo\\Flysystem\\QcloudCOSv5\\": "src/"
